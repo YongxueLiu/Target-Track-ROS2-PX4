@@ -227,6 +227,7 @@ def estimate_velocity_ols(self) -> Optional[np.ndarray]:
 **Yongxue Law (lyx)**
 ✈️ UAV Systems & PX4/ROS 2 Integration
 📍 Jiangsu, China
+📍 email: 805110687@qq.com
 💬 Research Focus: Autonomous UAV Perception, Sensor Fusion, Navigation
 
 ---
