@@ -235,10 +235,3 @@ def estimate_velocity_ols(self) -> Optional[np.ndarray]:
 
 This project is released under the [MIT License](LICENSE).
 本项目基于 [MIT 许可协议](LICENSE) 开源。
-
----
-
-```
-
----
-
