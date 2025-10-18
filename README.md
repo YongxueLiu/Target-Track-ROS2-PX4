@@ -1,10 +1,4 @@
-太好了 ✅
-下面是为你的项目量身打造的 **GitHub 完整版 README.md**（中英双语 + 自动目录 + 徽章 + 数学公式 + 结构清晰），可直接放入仓库根目录使用。
-我已使用 GitHub Markdown 语法（含公式、目录、徽章、代码块、表格）优化排版。
 
----
-
-```markdown
 # 🧠 YOLO Depth Fusion for PX4 ROS 2
 
 [![ROS 2](https://img.shields.io/badge/ROS2-Humble%20|%20Iron%20|%20Jazzy-blue)](https://docs.ros.org/)
