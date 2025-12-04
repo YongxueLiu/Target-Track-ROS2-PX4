@@ -102,6 +102,7 @@ CAMERA_CONFIGS = {
         "width": 1920, "height": 1080,
         "fx": 1397.2235870361328, "fy": 1397.2235298156738,
         "cx": 960.0, "cy": 540.0
+        "dist_coeffs": [-0.132, 0.045, 0.0001, -0.0002, 0.0]
     }
 }
 
@@ -251,6 +252,13 @@ class YOLODepthFusion(Node):
     def rgb_callback(self, msg: Image):
         try:
             rgb = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+            # --- 去畸变处理 ---
+            # if "dist_coeffs" in self.tf.K:
+            #     K = np.array([[self.tf.K["fx"], 0, self.tf.K["cx"]],
+            #                   [0, self.tf.K["fy"], self.tf.K["cy"]],
+            #                   [0, 0, 1]], dtype=np.float32)
+            #     D = np.array(self.tf.K["dist_coeffs"], dtype=np.float32)
+            #     rgb = cv2.undistort(rgb, K, D)
         except Exception as e:
             self.get_logger().error(f"RGB 转换失败: {e}")
             return
